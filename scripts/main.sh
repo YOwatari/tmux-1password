@@ -101,7 +101,7 @@ main() {
     selected_item_password="$(get_op_item_password "$selected_item_uuid")"
     spinner_stop
 
-    tmux send-keys -t "$ACTIVE_PANE" "$selected_item_password"
+    tmux send-keys -t "$TMUX_PANE" "$selected_item_password"
   fi
 }
 
